@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  .navGroup {
+    display: flex;
+    .link {
+      margin: 0px 7px;
+      list-style: none;
+    }
+  }
+}

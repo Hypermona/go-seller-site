@@ -1,0 +1,78 @@
+.container {
+  margin: auto;
+  .list_header {
+    display: flex;
+    width: 60vw;
+    // border: 1px solid rgb(81, 81, 81);
+    background: rgb(29, 29, 29);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px auto;
+    .add_button {
+      background-color: white;
+      color: black;
+    }
+  }
+  .CardContainer {
+    display: flex;
+    width: 60vw;
+    margin: auto;
+    // border: 1px solid rgb(81, 81, 81);
+    background: rgb(29, 29, 29);
+    padding: 20px;
+    border-radius: 8px;
+    .card_image {
+      flex: 2;
+    }
+    .cardDetails {
+      padding: 5px;
+      margin: 5px 10px;
+      text-align: start;
+      flex: 3;
+      height: 300px;
+      .card_title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: rgb(215, 215, 215);
+      }
+      .card_description {
+        color: rgb(165, 165, 165);
+      }
+    }
+    .cardActions {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      & button {
+        margin: 10px 2px;
+      }
+    }
+  }
+}
+
+@media only screen and (width<=500px) {
+  .container {
+    .list_header {
+      width: 90vw;
+      margin: 10px auto;
+    }
+    .CardContainer {
+      width: 90vw;
+      margin: 10px auto;
+      overflow: auto;
+
+      .cardDetails {
+        .card_title {
+          font-size: 1rem;
+        }
+      }
+      .cardActions {
+        display: none;
+      }
+    }
+  }
+}

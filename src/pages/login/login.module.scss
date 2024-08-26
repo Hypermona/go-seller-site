@@ -1,0 +1,62 @@
+.login_card {
+  width: 300px;
+  margin: auto;
+  padding: 40px;
+  border: 1px solid rgb(67, 66, 66);
+  border-radius: 5px;
+}
+.list_card {
+  width: 35vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 40px;
+  border: 1px solid rgb(67, 66, 66);
+  border-radius: 5px;
+  .form_card {
+    display: block;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  .list_item {
+    padding: 10px;
+    border-bottom: 1px solid rgb(72, 72, 72);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    .list_content {
+      margin-left: 20px;
+      p {
+        margin: 0;
+      }
+      .list_title {
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+      .list_description {
+        font-size: 0.8rem;
+        color: rgb(160, 158, 158);
+      }
+    }
+    .list_action {
+      margin-left: auto;
+    }
+  }
+  .logo {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (width<=500px) {
+  .list_card {
+    width: 100vw;
+    border: none;
+    padding: 20px;
+  }
+}
